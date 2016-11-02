@@ -1,0 +1,235 @@
+.App {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 20px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.flex-col {
+  display: flex;
+  flex-flow: column;
+}
+
+.nav {
+  margin: 20px;
+}
+
+/*dialog*/
+.dialog {
+  border: 1px solid #e6e6e6;
+  width: 400px;
+}
+
+.dialog-title {
+  padding: 10px
+}
+
+.dialog-title span {
+  font-size: 0.8em;
+}
+
+.dialog-body {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  padding: 0 10px;
+}
+
+.dialog-button {
+  padding: 10px;
+  float: right;
+}
+
+p {
+  font-size: 0.6em;
+}
+
+/*error box*/
+.error-box {
+  border: 1px solid #c99a9a;
+  border-radius: 10px;
+  background-color: #ead5d5;
+  color: #9d2c2c;
+  padding: 20px 100px 20px 20px;
+  margin: 30px;
+  font-size: 0.8em;
+}
+  .fa {
+    padding-right: 10px;
+  }
+
+/*envelope*/
+
+.envelope {
+  border: 1px solid #e6e6e6;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  height: 300px;
+  width: 700px;
+}
+
+.sender {
+  display: flex;
+  flex: 1;
+}
+
+.receiver {
+  display: flex;
+  flex: 1;
+  align-self: center;
+}
+
+.stamp-area {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.stamp {
+  display: flex;
+  border: 1px solid #e6e6e6;
+  width: 90px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  color: #e6e6e6;
+}
+
+#stamp {
+  transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+  -moz-transform:rotate(-35deg);
+}
+
+/*credit card*/
+
+.credit-card {
+  background-color: #00308F;
+  border-radius: 30px;
+  height: 240px;
+  width: 420px;
+  padding: 30px;
+  margin: 20px;
+  color: #ffffff;
+}
+
+.bank {
+  font-size: 1.6em;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.number {
+  font-size: 1.5em;
+}
+
+.monospaced {
+  font-family: monospace;
+  letter-spacing: 3px;
+}
+
+  #serial {
+    font-size: 0.6em;
+  }
+
+.expiration {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+
+  #valid {
+    width: 40px;
+    font-size: 0.6em;
+  }
+
+  #expiration-date {
+    display: flex;
+    font-size: 1.4em;
+  }
+
+.name {
+  font-family: monospace;
+  font-size: 1.3em;
+  padding: 10px 0;
+}
+
+/*poster*/
+
+.poster {
+  display: flex;
+  flex-flow: column;
+  background-color: #222222;
+  border: 1px solid #61DAFB;
+  width: 500px;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+  .image {
+    height: 200px;
+    border: 1px solid #61DAFB;
+  }
+
+  .title {
+    font-family: serif;
+    font-size: 4em;
+    color: #61adfb;
+  }
+
+  .text {
+    color: #ffffff;
+  }
+
+/*email*/
+
+.email {
+  display: flex;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  width: 900px;
+  font-size: 0.7em;
+  color: #575757;
+  margin: 50px;
+  padding: 10px 0;
+}
+
+  .email-sender {
+    display: flex;
+    flex: 3;
+  }
+
+  .message {
+    flex: 6;
+  }
+
+  .date {
+    flex: 1;
+    text-align: right;
+  }
+
+  .header {
+    color: #343434;
+    font-size: 1.2em;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+
+    #pushpin {
+      height: 15px;
+      opacity: 0.5;
+      padding: 5px;
+    }
