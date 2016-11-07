@@ -9,9 +9,7 @@ class FileList extends Component {
       <table className='file-list'>
         <tbody>
           {files.map(file => (
-            <tr className='file-list-item' key={file.id}>
-              <td className='file-name'>{file.name}</td>
-            </tr>
+            <FileListItem key={file.id} file={file}/>
           ))}
         </tbody>
       </table>
@@ -20,6 +18,20 @@ class FileList extends Component {
 }
 FileList.propTypes = {
   files: React.PropTypes.array
+}
+
+class FileListItem extends Component {
+  render () {
+    var {file} = this.props
+    return (
+      <tr className='file-list-item'>
+        <td className='file-name'>{file.name}</td>
+      </tr>
+    )
+  }
+}
+FileListItem.propTypes = {
+  file: React.PropTypes.object.isRequired
 }
 
 const testFiles = [
