@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import '../public/font-awesome.css'
 
 class FileList extends Component {
   render () {
@@ -25,13 +26,35 @@ class FileListItem extends Component {
     var {file} = this.props
     return (
       <tr className='file-list-item'>
-        <td className='file-name'>{file.name}</td>
+        {getFileName(file)}
       </tr>
     )
   }
 }
 FileListItem.propTypes = {
   file: React.PropTypes.object.isRequired
+}
+
+function FileIcon({ file }) {
+  let icon = 'fa-file-text-o'
+  if (file.type === 'folder') {
+    icon = 'fa-folder'
+  }
+  return (
+    <td className='file-icon'>
+      <i className={`fa ${icon}`} />
+    </td>
+  )
+}
+FileIcon.propTypes = {
+  file: React.PropTypes.object.isRequired
+}
+
+function getFileName(file) {
+  return [
+    <FileIcon file={file} key={0}/>,
+    <td className='file-name' key={1}>{file.name}</td>
+  ]
 }
 
 const testFiles = [
