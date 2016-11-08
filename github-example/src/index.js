@@ -27,6 +27,7 @@ class FileListItem extends Component {
     return (
       <tr className='file-list-item'>
         {getFileName(file)}
+        <CommitMessage commit={file.latestCommit} />
       </tr>
     )
   }
@@ -55,6 +56,13 @@ function getFileName(file) {
     <FileIcon file={file} key={0}/>,
     <td className='file-name' key={1}>{file.name}</td>
   ]
+}
+// function returning array is a hacky workaround to the limit of components returning only one element
+
+function CommitMessage ({ commit }) {
+  return (
+    <td className='commit-message'>{commit.message}</td>
+  )
 }
 
 const testFiles = [
