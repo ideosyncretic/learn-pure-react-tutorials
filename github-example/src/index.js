@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import Time from './time'
 import './index.css';
 import '../public/font-awesome.css'
 
@@ -28,6 +29,9 @@ class FileListItem extends Component {
       <tr className='file-list-item'>
         {getFileName(file)}
         <CommitMessage commit={file.latestCommit} />
+        <td className='age'>
+          <Time time={file.updated_at} />
+        </td>
       </tr>
     )
   }
