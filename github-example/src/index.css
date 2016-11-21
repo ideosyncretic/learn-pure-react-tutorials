@@ -8,23 +8,30 @@ body {
   font-family: Helvetica, arial, sans-serif;
   width: 900px;
   color: #333;
-  margin: 0 auto;
+  margin: 10px auto;
   border: 1px solid #ccc;
   border-collapse: collapse;
 }
 
-.file-list td {
+.file-list div {
   border-top: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
+  padding: 2px 4px;
+}
+
+.file-list:first-child {
+  border-top: none
 }
 
 .file-name {
-  padding: 4px;
+  padding-left: 10px;
   max-width: 180px;
+  min-width: 300px;
 }
 
 .file-icon {
-  width: 17px;
-  padding-left: 4px;
+  min-width: 23px;
 }
 
 .file-icon .fa-folder {
@@ -33,12 +40,11 @@ body {
 
 .commit-message {
   max-width: 442px;
-  padding-left: 10px;
   overflow: hidden;
+  min-width: 300px;
 }
 
 .age {
-  width: 125px;
+  min-width: 275px;
   text-align: right;
-  padding-right: 4px;
 }

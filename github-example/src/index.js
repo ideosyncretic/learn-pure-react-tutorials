@@ -29,9 +29,9 @@ class FileListItem extends Component {
       <tr className='file-list-item'>
         {getFileName(file)}
         <CommitMessage commit={file.latestCommit} />
-        <td className='age'>
+        <div className='age'>
           <Time time={file.updated_at} />
-        </td>
+        </div>
       </tr>
     )
   }
@@ -46,9 +46,9 @@ function FileIcon({ file }) {
     icon = 'fa-folder'
   }
   return (
-    <td className='file-icon'>
+    <div className='file-icon'>
       <i className={`fa ${icon}`} />
-    </td>
+    </div>
   )
 }
 FileIcon.propTypes = {
@@ -58,14 +58,14 @@ FileIcon.propTypes = {
 function getFileName(file) {
   return [
     <FileIcon file={file} key={0}/>,
-    <td className='file-name' key={1}>{file.name}</td>
+    <div className='file-name' key={1}>{file.name}</div>
   ]
 }
 // function returning array is a hacky workaround to the limit of components returning only one element
 
 function CommitMessage ({ commit }) {
   return (
-    <td className='commit-message'>{commit.message}</td>
+    <div className='commit-message'>{commit.message}</div>
   )
 }
 
