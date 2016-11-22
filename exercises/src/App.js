@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import '../public/font-awesome.css'
-
+import TweetList from './TweetList'
 
 const person = {
   name: 'Mr. Sender',
@@ -58,6 +58,7 @@ class App extends Component {
         <CreditCard cardInfo={cardInfo} />
         <Poster posterInfo={posterInfo} />
         <Email emailInfo={emailInfo} />
+        <TweetList />
       </div>
     )
   }
