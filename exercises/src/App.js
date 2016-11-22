@@ -2,6 +2,43 @@ import React, { Component } from 'react'
 import './App.css'
 import '../public/font-awesome.css'
 
+
+const person = {
+  name: 'Mr. Sender',
+  address: {
+    line1: '123 Fake St.',
+    line2: 'Boston, MA 02118'
+  }
+}
+
+const person2 = {
+  name: 'Mrs. Receiver',
+  address: {
+    line1: '123 Fake St.',
+    line2: 'San Francisco, CA 94101'
+  }
+}
+
+const cardInfo = {
+  name: 'Cardholder Name',
+  expiration: '08/19',
+  number: '1234 5678 8765 4321',
+  bank: 'Big Bank, Inc.'
+}
+
+const posterInfo = {
+  image: 'https://facebook.github.io/react/img/logo_og.png',
+  title: 'REACT',
+  text: 'The best thing since jQuery, probably.'
+}
+
+const emailInfo = {
+  sender: 'React Newsletter',
+  subject: 'Issue 36',
+  date: 'Jul 15',
+  message: 'Read this issue on the web http://reactjsnewsletter.com/issues/36?sid=3QGDYBX'
+}
+
 class App extends Component {
   render () {
     return (
@@ -123,43 +160,6 @@ class ErrorBox extends Component {
     )
   }
 }
-
-const person = {
-  name: 'Mr. Sender',
-  address: {
-    line1: '123 Fake St.',
-    line2: 'Boston, MA 02118'
-  }
-}
-
-const person2 = {
-  name: 'Mrs. Receiver',
-  address: {
-    line1: '123 Fake St.',
-    line2: 'San Francisco, CA 94101'
-  }
-}
-
-const cardInfo = {
-  name: 'Cardholder Name',
-  expiration: '08/19',
-  number: '1234 5678 8765 4321',
-  bank: 'Big Bank, Inc.'
-}
-
-const posterInfo = {
-  image: 'https://facebook.github.io/react/img/logo_og.png',
-  title: 'REACT',
-  text: 'The best thing since jQuery, probably.'
-}
-
-const emailInfo = {
-  sender: 'React Newsletter',
-  subject: 'Issue 36',
-  date: 'Jul 15',
-  message: 'Read this issue on the web http://reactjsnewsletter.com/issues/36?sid=3QGDYBX'
-}
-
 
 const AddressLabel = React.createClass({
   propTypes: {
