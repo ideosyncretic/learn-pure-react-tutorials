@@ -5,6 +5,7 @@
   align-items: center;
   text-align: left;
   font-size: 20px;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .App-intro {
@@ -156,7 +157,7 @@ p {
     font-size: 1.4em;
   }
 
-.name {
+.cardholder-name {
   font-family: monospace;
   font-size: 1.3em;
   padding: 10px 0;

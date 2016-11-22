@@ -1,6 +1,4 @@
-import React from 'react'
-
-var tweets = [
+const tweets = [
   {
     id: 1,
     message: 'Something about cats.',
@@ -23,7 +21,7 @@ var tweets = [
     },
     likes: 10,
     retweets: 4,
-    timestamp: '2016-09-13 05:45:08'
+    timestamp: '2016-06-13 05:45:08'
   },
   {
     id: 3,

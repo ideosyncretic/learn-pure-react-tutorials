@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import '../public/font-awesome.css'
 import TweetList from './TweetList'
+import TrelloBoard from './TrelloBoard'
 
 const person = {
   name: 'Mr. Sender',
@@ -59,6 +60,7 @@ class App extends Component {
         <Poster posterInfo={posterInfo} />
         <Email emailInfo={emailInfo} />
         <TweetList />
+        <TrelloBoard />
       </div>
     )
   }
@@ -228,7 +230,7 @@ const CreditCard = React.createClass({
             {expiration}
           </div>
         </div>
-        <div className='name'>
+        <div className='cardholder-name'>
           {name}
         </div>
       </div>
