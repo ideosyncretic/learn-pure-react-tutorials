@@ -13,8 +13,11 @@ body {
   border-collapse: collapse;
 }
 
-.file-list div {
+.file-list td {
   border-top: 1px solid #ccc;
+}
+
+.file-list div {
   box-sizing: border-box;
   float: left;
   padding: 2px 4px;
@@ -24,10 +27,10 @@ body {
   border-top: none
 }
 
-.file-name {
+td.file-name {
   padding-left: 10px;
   max-width: 180px;
-  min-width: 300px;
+  min-width: 150px;
 }
 
 .file-icon {
@@ -38,13 +41,17 @@ body {
   color: #508FCA;
 }
 
-.commit-message {
+td.commit-message {
   max-width: 442px;
   overflow: hidden;
   min-width: 300px;
 }
 
-.age {
+td.age {
   min-width: 275px;
+}
+
+div.age {
+  float: right;
   text-align: right;
 }
