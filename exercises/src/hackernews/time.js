@@ -8,7 +8,7 @@ class Time extends Component {
     } // fat arrow used to bind 'this' to the component, not function
 
     return (
-      <span className='time'>{computeTimeString()}</span>
+      <span className='story-time'>{computeTimeString()}</span>
     )
   }
 }

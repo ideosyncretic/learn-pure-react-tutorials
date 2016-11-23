@@ -4,12 +4,17 @@ import Time from './time'
 class Details extends Component {
   render () {
     let {points, user, timestamp, comments} = this.props
+    let commentGrammar = function (comments) {
+      if (comments > 1) {
+        return 'comments'
+      } else return 'comment'
+    }
     return (
-      <div>
-        <span className='story-details'>
-          {points} points by {user}
-          <Time time={timestamp}/>{ ' ' }
-          | flag | hide | {comments} comments |
+      <div className='story-details'>
+        <span>
+          {points} points by {user}{' '}
+          <Time time={timestamp}/>{' '}
+          | flag | hide | {comments} {commentGrammar(comments)} |
         </span>
       </div>
     )
