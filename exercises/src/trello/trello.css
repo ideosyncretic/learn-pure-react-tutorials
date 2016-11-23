@@ -19,6 +19,10 @@ body {
   font-size: 0.9rem;
 }
 
+.board-header {
+  padding: 8px 0;
+}
+
 .board-name {
   font-size: 0.9rem;
 }
@@ -44,6 +48,6 @@ body {
   border-radius: 5px;
   background-color: white;
   margin: 5px 0;
-  padding: 5px;
+  padding: 8px;
   font-size: 1rem;
 }

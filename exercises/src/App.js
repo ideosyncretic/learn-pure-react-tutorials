@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import './App.css'
 import '../public/font-awesome.css'
-import TweetList from './TweetList'
-import TrelloBoard from './TrelloBoard'
+import TweetList from './tweet/TweetList'
+import TrelloBoard from './trello/TrelloBoard'
+import StoriesList from './hackernews/StoriesList'
 
 const person = {
   name: 'Mr. Sender',
@@ -61,6 +62,7 @@ class App extends Component {
         <Email emailInfo={emailInfo} />
         <TweetList />
         <TrelloBoard />
+        <StoriesList />
       </div>
     )
   }
