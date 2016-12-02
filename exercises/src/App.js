@@ -4,6 +4,7 @@ import '../public/font-awesome.css'
 import TweetList from './tweet/TweetList'
 import TrelloBoard from './trello/TrelloBoard'
 import StoriesList from './hackernews/StoriesList'
+import Pinterest from './pinterest/Pinterest'
 
 const person = {
   name: 'Mr. Sender',
@@ -63,6 +64,7 @@ class App extends Component {
         <TweetList />
         <TrelloBoard />
         <StoriesList />
+        <Pinterest />
       </div>
     )
   }

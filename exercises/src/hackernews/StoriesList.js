@@ -7,7 +7,7 @@ import './hackernews.css'
 class StoriesList extends Component {
   render () {
     return (
-      <div>
+      <div className='hacker-news'>
         <Nav />
         <table className='stories-list'>
           <tbody>
