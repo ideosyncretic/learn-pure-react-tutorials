@@ -37,3 +37,11 @@
   .Item-addToCart:focus {
     outline: none;
   }
+.Item-left {
+  flex: 1;
+}
+.Item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
