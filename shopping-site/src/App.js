@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import Nav from './Nav'
-import './App.css';
+import './App.css'
+import ItemPage from './ItemPage'
+import {items} from './static-data'
+
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: 0
+      selectedTab: 0,
+      cart: []
     };
   }
 
@@ -14,10 +18,21 @@ class App extends Component {
     this.setState({selectedTab: index})
   } // ignore linter warning
 
+  handleAddToCart = (item) => {
+    this.setState({
+      cart: [...this.state.cart, item.id]
+      // set cart to a copy of current cart, new item added at the end.
+      //Spread operator expands and extracts out individual items in array. Can also apply to objects when using Babel, available with Create React App.
+    })
+  }
+
   renderContent() {
     switch(this.state.selectedTab) {
       default:
-      case 0: return <span>Items</span>;
+      case 0:
+        return (
+          <ItemPage items={items} onAddToCart={this.handleAddToCart} />
+        );
       case 1: return <span>Cart</span>;
     }
   }
