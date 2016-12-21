@@ -11,7 +11,6 @@ function ItemPage({ items, onAddToCart }) {
             <button
               className='Item-addToCart'
               onClick={onAddToCart.bind(null, item)}>
-              // binds handler function to specific item, while passing "null" as first argument because these functions will already be bound to the proper "this" when passed in
               Add to Cart
             </button>
           </Item>
@@ -19,6 +18,8 @@ function ItemPage({ items, onAddToCart }) {
       )}
     </ul>
   )
+
+  // ".bind(null, item)" binds handler function to specific item, while passing "null" as first argument because these functions will already be bound to the proper "this" when passed in
 }
 ItemPage.propTypes = {
   items: React.PropTypes.array.isRequired,

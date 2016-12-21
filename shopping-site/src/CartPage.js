@@ -2,7 +2,7 @@ import React from 'react'
 import Item from './Item'
 import './ItemPage.css'
 
-function CartPage( {items} ) {
+function CartPage( {items, onAddOne, onRemoveOne} ) {
   return (
     <ul className='CartPage-items'>
       {items.map( item =>

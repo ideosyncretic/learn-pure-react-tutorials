@@ -74,11 +74,10 @@ class App extends Component {
     })
 
     return (
-      <CartPage
-        items={cartItems}
-        onAddOne={this.handleAddToCart}
+      <CartPage items={cartItems}
+        onAddOne={this.handleAddToCart} 
         onRemoveOne={this.handleRemoveOne}
-      />
+        />
     )
   }
 
