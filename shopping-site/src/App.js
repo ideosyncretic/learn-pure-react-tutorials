@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Nav from './Nav'
 import './App.css';
 
 class App extends Component {
@@ -25,12 +26,7 @@ class App extends Component {
     let {selectedTab} = this.state
     return (
       <div className="App">
-        <nav className="App-nav">
-          <ul>
-            <li className={`App-nav-item ${selectedTab === 0 && 'selected'}`}><a onClick={this.selectTab.bind(this, 0)}>Items</a></li>
-            <li className={`App-nav-item ${selectedTab === 1 && 'selected'}`}><a onClick={this.selectTab.bind(this, 1)}>Cart</a></li>
-          </ul>
-        </nav>
+        <Nav selectedTab={selectedTab} handleTabChange={this.selectTab}/>
         <main className="App-content">
           {this.renderContent()}
         </main>
